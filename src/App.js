@@ -1,35 +1,14 @@
-import React, { createContext, useContext } from 'react';
+import React, {useState} from 'react'
 
-const ValueContext = createContext()
-
-const Other = () => {
-    const value = useContext(ValueContext)
+function App(){
+    const [count, setCount] = useState(0);
     return (
         <div>
-            Other {value}
+           <h1>Teste</h1>
+           <p>Count: {count}</p>
+           <button onClick={ () => setCount(count + 1) }>Contar</button>
         </div>
     )
-}
-
-const Content = () => {
-    return (
-        <div>
-            Content
-            <Other />
-        </div>
-    )
-}
-
-function App() {
-    const value = "DevPleno LiveClass"
-    return (
-        <ValueContext.Provider value={value}>
-        <div>
-            App
-            <Content />
-        </div>
-        </ValueContext.Provider>
-    );
 }
 
 export default App;
