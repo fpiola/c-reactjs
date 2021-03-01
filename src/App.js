@@ -1,5 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 
+
+function App() {
+    const [count, setCount] = useState(0);
+    // Similar a componentDidMount e componentDidUpdate:  useEffect(() => {    // Atualiza o título do documento utilizando a API do navegador    document.title = `You clicked ${count} times`;  });
+    return (
+        <div>
+            <p>You clicked {count} times</p>
+            <button onClick={() => setCount(count + 1)}>
+                Click me
+      </button>
+        </div>
+    );
+}
+
+export default App;
+
+/*
+
+--------------------------------------------
 
 function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
@@ -16,8 +35,6 @@ function App() {
 }
 
 export default App;
-
-/*
 
 
 --------------------------------------------
