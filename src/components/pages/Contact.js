@@ -1,12 +1,10 @@
+
 import React from 'react'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import App from '../../containers/App'
 
 const Contact = () =>
-    <div>
-        <Header />
-        <div>Contact</div>
-        <Footer />
-    </div>
+    <App>
+        <h1>Contact</h1>
+    </App>
 
-export default Contact;
+export default Contact

@@ -1,12 +1,9 @@
 import React from 'react'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import App from '../../containers/App'
 
 const Home = () =>
-    <div>
-        <Header />
-        <div>Home</div>
-        <Footer />
-    </div>
+    <App>
+        <h1>Home</h1>
+    </App>
 
-export default Home;
+export default Home

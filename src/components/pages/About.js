@@ -1,12 +1,9 @@
 import React from 'react'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import App from '../../containers/App'
 
 const About = () =>
-    <div>
-        <Header />
-        <div>About</div>
-        <Footer />
-    </div>
+    <App>
+        <h1>About</h1>
+    </App>
 
-export default About;
+export default About
